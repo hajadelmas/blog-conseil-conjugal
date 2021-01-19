@@ -12,11 +12,11 @@ export default ({ data }) => (
 
     <Row>
 
-      <Col sm={12}>
+      <Col sm={12} md={6}>
        <img src={ImgCouple} style={{ width: "100%", backgroundColor: "white" }}/>       
       </Col>
 
-      <Col sm={12}>
+      <Col sm={12} md={6}>
         <div className={styles.heroDetails}>
           <h3 className={styles.heroHeadline}>Carpe Consilium</h3>
           <p className={styles.heroTitle}>Ou comment mettre à profit le Conseil Conjugal et Familial.</p>
