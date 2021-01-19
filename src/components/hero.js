@@ -1,19 +1,40 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import ImgCouple from '../images/img_couple.svg'
+
+import {Row, Container, Col} from 'react-bootstrap'
 
 import styles from './hero.module.css'
 
 export default ({ data }) => (
-  <div className={styles.hero}>
-    <Img
-      className={styles.heroImage}
-      alt={data.name}
-      fluid={data.heroImage.fluid}
-    />
-    <div className={styles.heroDetails}>
-      <h3 className={styles.heroHeadline}>{data.name}</h3>
-      <p className={styles.heroTitle}>{data.title}</p>
-      <p>{data.shortBio.shortBio}</p>
-    </div>
-  </div>
+
+  <Container className={styles.hero}>
+
+    <Row>
+
+      <Col sm={12}>
+       <img src={ImgCouple} style={{ width: "100%", backgroundColor: "white" }}/>       
+      </Col>
+
+      <Col sm={12}>
+        <div className={styles.heroDetails}>
+          <h3 className={styles.heroHeadline}>Carpe Consilium</h3>
+          <p className={styles.heroTitle}>Ou comment mettre à profit le Conseil Conjugal et Familial.</p>
+          <p>Imaginons le potentiel des bienfaits du Conseil Conjugal et Familial si on en comprenait davantage son utilité et son sens, s’il était encore plus valorisé. Si on profitait de son « tenir conseil »…</p>
+        </div>
+      </Col>
+      
+
+      
+    </Row>
+    
+      
+      
+
+      
+
+      
+
+  </Container>
+  
 )

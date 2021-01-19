@@ -7,10 +7,24 @@ import Layout from '../components/layout'
 
 import heroStyles from '../components/hero.module.css'
 
+import { DiscussionEmbed } from "disqus-react"
+
+ const shortname = "carpe-consilium"
+
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+
+    const titlepost = get(this.props, 'data.contentfulBlogPost.title')
+    const slugpost = get(this.props, 'data.contentfulBlogPost.slug')
+    const idpost = get(this.props, 'data.contentfulBlogPost.id')
+    
+    const disqusConfig = {
+      shortname: shortname,
+      config: { identifier: idpost, slugpost, titlepost },
+    }
 
     return (
       <Layout location={this.props.location}>
@@ -37,7 +51,10 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
+
+            <DiscussionEmbed {...disqusConfig} />
           </div>
+          
         </div>
       </Layout>
     )
@@ -49,6 +66,8 @@ export default BlogPostTemplate
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
+      id
+      slug
       title
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {

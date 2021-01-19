@@ -1,8 +1,8 @@
 .hero {
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
+  margin-top: 60px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .heroImage {
@@ -15,13 +15,9 @@
 }
 
 .heroDetails {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0);
   font-size: 14px;
-  padding: 0 0.5em;
+  padding: 0 4.5em;
+  margin-left: 1em;
 }
 
 @media(min-width: 600px) {

@@ -1,3 +1,9 @@
+.navigation_contain {
+  display: flex;
+  justify-content:space-between;
+}
+
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -17,4 +23,5 @@
 
 .navigationItem a {
   color: currentColor;
+  text-decoration: none;
 }
