@@ -31,8 +31,8 @@ class RootIndex extends React.Component {
               })}
             </ul>
             <div className='about'>
-              {/* <h2 className='section-headline'>A propos de ce blog</h2> */}
-              <img src={Avatar} alt='avatar' style={{ maxWidth: '30%' }}/>
+              <h2 className='section-headline'>A propos de ce blog</h2>
+              <img src={Avatar} alt='avatar' style={{ maxWidth: '40%', float: 'left' }}/>
               <div className='about_text'>
                 <p>Alors l’idée m’est venue de vous proposer ce blog, et d’en être la modératrice.
                 Ceci est un blog pour réfléchir ensemble et soyons clair, il n’a pas pour but de supplanter les organisations professionnelles. Je dirai qu’il est un complément dont je vous détaillerai les pourquoi et comment dans le prochain article.
@@ -47,6 +47,7 @@ class RootIndex extends React.Component {
                 Merci de me lire et à bientôt pour partager respectueusement ensemble
                 </p>
               </div>
+              
             </div>
             
           </div>

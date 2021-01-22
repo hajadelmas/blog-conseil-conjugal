@@ -80,15 +80,16 @@ a {
     margin-bottom: 30px;
   }
 
-  .about {
+  /* .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   .about_text {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.5em;
+    display: inline;
   }
 
   .navbar-collapse {
@@ -98,4 +99,14 @@ a {
   .navbar-light .navbar-nav .nav-link {
     color: black;
     font-size: 1.2em;
+  }
+
+  @media(max-width: 767px) {
+    .navbar-light .navbar-brand {
+      width: 50%;
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: 100%;
+    }
   }

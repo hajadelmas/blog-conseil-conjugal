@@ -19,7 +19,7 @@ export default () => (
   //   </ul>
   // </nav>
 
-  <Navbar bg="white" expand="lg" className=''>
+  <Navbar bg="white" expand="lg" className='justify-content-between'>
     <Navbar.Brand href="/" className=''>
       <img
           alt=""
