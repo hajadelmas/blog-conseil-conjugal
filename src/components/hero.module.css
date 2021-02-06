@@ -1,8 +1,8 @@
 .hero {
   margin-top: 60px;
   color: black;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .heroImage {

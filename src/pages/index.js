@@ -30,16 +30,16 @@ class RootIndex extends React.Component {
                 )
               })}
             </ul>
+            <h2 className='section-headline'>A propos de ce blog</h2>
             <div className='about'>
-              <h2 className='section-headline'>A propos de ce blog</h2>
-              <img src={Avatar} alt='avatar' style={{ maxWidth: '40%', float: 'left' }}/>
+              <img src={Avatar} alt='avatar'/>
               <div className='about_text'>
-                <p>Alors l’idée m’est venue de vous proposer ce blog, et d’en être la modératrice.
-                Ceci est un blog pour réfléchir ensemble et soyons clair, il n’a pas pour but de supplanter les organisations professionnelles. Je dirai qu’il est un complément dont je vous détaillerai les pourquoi et comment dans le prochain article.
+                <p>Alors l’idée m’est venue de vous proposer ce <strong>blog</strong>, et d’en être la modératrice.
+                Ceci est un blog pour réfléchir ensemble et soyons clair, il n’a pas pour but de supplanter les organisations professionnelles. Je dirai qu’il est un <strong>complément</strong> dont je vous détaillerai les pourquoi et comment dans le prochain article.
                     
                 </p>
                 <p>
-                Il s’adresse d’abord aux professionnel.le.s attesté.e.s au Conseil conjugal et aux personnes en cours de formation. Par la suite, mon plus grand souhait serait qu’il concerne toute la population francophone. 
+                Il s’adresse d’abord aux professionnel.le.s attesté.e.s au <strong>Conseil conjugal</strong> et aux personnes en cours de formation. Par la suite, mon plus grand souhait serait qu’il concerne toute la population francophone. 
                 </p>
                 <p>
                 « Vary iray no nafafy ka vary jato no nojinjaina » (« un grain de riz semé pour cent récoltés », proverbe malgache)

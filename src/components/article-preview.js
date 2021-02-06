@@ -7,7 +7,7 @@ import styles from './article-preview.module.css'
 export default ({ article }) => (
   <div className={styles.preview}>
     <Img alt="" fluid={article.heroImage.fluid} />
-    <h3 className={styles.previewTitle}>
+    <h3 className={styles.previewTitle} style={{ marginTop: "20px" }}>
       <Link to={`/blog/${article.slug}`}>{article.title}</Link>
     </h3>
     <small>{article.publishDate}</small>
