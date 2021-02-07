@@ -32,7 +32,7 @@ class RootIndex extends React.Component {
             </ul>
             <h2 className='section-headline'>A propos de ce blog</h2>
             <div className='about'>
-              <img src={Avatar} alt='avatar'/>
+              
               <div className='about_text'>
                 <p>Alors l’idée m’est venue de vous proposer ce <strong>blog</strong>, et d’en être la modératrice.
                 Ceci est un blog pour réfléchir ensemble et soyons clair, il n’a pas pour but de supplanter les organisations professionnelles. Je dirai qu’il est un <strong>complément</strong> dont je vous détaillerai les pourquoi et comment dans le prochain article.

@@ -1,0 +1,23 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.avatar {
+    width: 50%;
+}
+
+.text {
+    width: 80%;
+}
+
+@media(max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        text-align: center;
+    }
+}
