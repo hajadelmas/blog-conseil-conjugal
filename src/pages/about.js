@@ -30,10 +30,9 @@ export default function about() {
                             Claudia H. D. P.
                         </p>
                     </div>
-                    
-                    
-                    
                 </div>
+
+                <h2 className='section-headline'>Bibliographie</h2>
             </Layout>
         </>
     )

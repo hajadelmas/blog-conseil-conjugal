@@ -8,6 +8,7 @@
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.6.0",
     "disqus-react": "^1.0.10",
     "gatsby": "^2.23.9",

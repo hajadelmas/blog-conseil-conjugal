@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './navigation.module.css'
+// import styles from './navigation.module.css'
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 
 
@@ -29,6 +29,9 @@ export default () => (
         </Nav.Item>
         <Nav.Item>
           <Link to="/about/" className='nav-link'>A propos</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/contact/" className='nav-link'>Contact</Link>
         </Nav.Item>
         </Nav>
       </Navbar.Collapse>

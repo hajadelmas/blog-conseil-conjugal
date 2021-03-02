@@ -99,6 +99,7 @@ a {
   .navbar-light .navbar-nav .nav-link {
     color: black;
     font-size: 1.2em;
+    white-space: nowrap;
   }
 
   @media(max-width: 767px) {
